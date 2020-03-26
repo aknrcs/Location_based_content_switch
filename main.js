@@ -20,7 +20,7 @@ function changestuff(){
     _lat = document.getElementById("latitude").value
     _long = document.getElementById("longitude").value
     console.log(_lat,_long)
-    if(_lat == 13.0172 & _long == 77.7621){
+    if(_lat == lat & _long == long){
         console.log("in f")
         changein()
     }
@@ -50,13 +50,56 @@ function getLocation() {
 
     tt = document.getElementById("out").title
     if(tt == "in"){
-        document.getElementById("showc").innerHTML = "this is the content for indoors"
+
+        document.getElementById("showc").innerHTML = `
+        <table>
+        <tr>
+        <td>Sl No</td>
+        <td>content</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>in1</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>in2</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>in3</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>in4</td>
+      </tr>
+    </table>`
     }
     else{
-        document.getElementById("showc").innerHTML = "this is the content for outdoors"
+        document.getElementById("showc").innerHTML = 
+
+    `<table>
+  <tr>
+    <td>Sl No</td>
+    <td>content</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>out1</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>out2</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>out3</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>out4</td>
+  </tr>
+</table>`
+        
     }
   }
-  
-// const interval = setInterval(showPosition, 1000)
-//Latitude: 13.0172
-//Longitude: 77.7621
