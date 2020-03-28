@@ -65,10 +65,10 @@ ListPlaces = {
     }
 }
 
-var menu1 = `<ul> <li><button onclick = "fillstuff(0)"><a class="active">Hospital info</a></button></li> <li><button onclick = "contact(0)"><a>Contact</a></button></li> <li><button onclick = "about(0)"><a>About</a></button></li> </ul>`;
-var menu2 = '<ul> <li><button onclick = "fillstuff(1)"><a class="active">Farm info</a></button></li> <li><button onclick = "contact(1)"><a>Contact</a></button></li> <li><button onclick = "about(1)"><a>About</a></button></li> </ul>';
-var menu3 = '<ul> <li><button onclick = "fillstuff(2)"><a class="active">Mall info</a></button></li> <li><button onclick = "contact(2)"><a>Contact</a></button></li> <li><button onclick = "about(2)"><a>About</a></button></li> </ul>';
-var menu4 = '<ul> <li><button onclick = "fillstuff(3)"><a class="active">Shop info</a></button></li> <li><button onclick = "contact(3)"><a>Contact</a></button></li> <li><button onclick = "about(3)"><a>About</a></button></li> </ul>';
+var menu1 = `<ul> <li><button style="border:none;" onclick = "fillstuff(0)"><a class="active">Hospital info</a></button></li> <li><button style="border:none;" onclick = "contact(0)"><a>Contact</a></button></li> <li><button style="border:none;" onclick = "about(0)"><a>About</a></button></li> </ul>`;
+var menu2 = '<ul> <li><button style="border:none;" onclick = "fillstuff(1)"><a class="active">Farm info</a></button></li> <li><button style="border:none;" onclick = "contact(1)"><a>Contact</a></button></li> <li><button style="border:none;" onclick = "about(1)"><a>About</a></button></li> </ul>';
+var menu3 = '<ul> <li><button style="border:none;" onclick = "fillstuff(2)"><a class="active">Mall info</a></button></li> <li><button style="border:none;" onclick = "contact(2)"><a>Contact</a></button></li> <li><button style="border:none;" onclick = "about(2)"><a>About</a></button></li> </ul>';
+var menu4 = '<ul> <li><button style="border:none;" onclick = "fillstuff(3)"><a class="active">Shop info</a></button></li> <li><button style="border:none;" onclick = "contact(3)"><a>Contact</a></button></li> <li><button style="border:none;" onclick = "about(3)"><a>About</a></button></li> </ul>';
 
 function fillstuff(fin){
     arr = Object.keys(locDict)
@@ -129,3 +129,4 @@ function about(fin){
     tt = "About: "+xx.about
     document.getElementById('here').innerHTML = tt
 }
+
